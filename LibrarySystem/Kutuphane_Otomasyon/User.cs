@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Kutuphane_Otomasyon
+{
+    public class User
+    {
+        public int UserID { get; set; }
+        public string FullName { get; set; }
+        public virtual ICollection<Book> BorrowedBooks { get; set; }
+    }
+}
